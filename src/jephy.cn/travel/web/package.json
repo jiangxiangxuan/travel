@@ -1,0 +1,23 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "My posh Nuxt.js project",
+  "author": "jiangxiangxuan",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {},
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "82"
+    }
+  }
+}

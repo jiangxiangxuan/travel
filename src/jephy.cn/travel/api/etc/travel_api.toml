@@ -1,0 +1,11 @@
+http_addr = ":81"
+log_level = "debug"
+
+[database]
+driver = "mysql"
+host = "127.0.0.1"
+port = 3306
+user = "root"
+password = "root"
+db_name = "travel"
+max_idle_conns = 300
