@@ -20,8 +20,6 @@ if [ $# = 0 ] ; then
     GO install ./$CMD_FOLDER/$PROJECT_NAME
     BUILD_RES=$?
 
-    mv -f $PROJECT_ROOT/* $BUILD_ROOT/
-    rm -rf $BUILD_ROOT/src $BUILD_ROOT/pkg
     if [[ $BUILD_RES = 0 ]]; then
        echo "[BUILD_INFO] Build success......"
     fi
@@ -37,7 +35,6 @@ do
     fi
 done
 
-rm -rf $BUILD_ROOT/src $BUILD_ROOT/pkg
 if [[ $BUILD_RES = 0 ]]; then
     echo "[BUILD_INFO] Build success......"
 fi
