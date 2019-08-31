@@ -8,7 +8,7 @@ echo "[BUILD_INFO] Build start from dir: $(pwd)"
 export GO_VERSION="1.10.3"
 export PROJECT_NAME="travel_api"
 export CMD_FOLDER="cmd"
-export BUILD_ROOT=$(pwd)/../../../../
+export BUILD_ROOT=$(pwd)/../
 ##################  Make a standard go build environment  #####################
 export GOPATH=$(pwd)/../../../../
 export GOBIN=$BUILD_ROOT/bin
