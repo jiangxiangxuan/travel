@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/jephy.cn/travel/api/build.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="207">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -43,6 +43,7 @@
       <find>index</find>
       <find>_2ff05fc6</find>
       <find>$PROJECT_ROOT</find>
+      <find>project</find>
     </findStrings>
     <dirStrings>
       <dir>E:\travel\src\jephy.cn\travel\web</dir>
@@ -211,7 +212,7 @@
     </configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16085792" />
@@ -586,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jephy.cn/travel/api/build.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="207">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="23" />
         </state>
       </provider>
     </entry>
