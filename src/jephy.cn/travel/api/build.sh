@@ -1,5 +1,9 @@
 #!/bin/sh -e
 
+sudo dd if=/dev/zero of=/swapfile bs=64M count=16
+sudo mkswap /swapfile
+sudo swapon /swapfile
+
 echo "[BUILD_INFO] Build start from dir: $(pwd)"
 export GO_VERSION="1.10.3"
 export PROJECT_NAME="travel_api"
@@ -39,3 +43,6 @@ if [[ $BUILD_RES = 0 ]]; then
     echo "[BUILD_INFO] Build success......"
 fi
 exit $BUILD_RES
+
+sudo swapoff /swapfile
+sudo rm /swapfile
