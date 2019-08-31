@@ -5,12 +5,12 @@ EXPOSE 80
 RUN mkdir -p /opt/apps/travel/bin
 WORKDIR /opt/apps/travel
 
-COPY ../nginx /opt/apps/travel/nginx
-COPY ../web /opt/apps/travel/web
-COPY ../docker /opt/apps/travel/docker
-COPY ../../../../../travel/bin /opt/apps/travel/bin
+COPY ./nginx /opt/apps/travel/nginx
+COPY ./web /opt/apps/travel/web
+COPY ./docker /opt/apps/travel/docker
+COPY ./bin /opt/apps/travel/bin
 
-COPY ../api/etc/travel_api.toml /opt/apps/travel/etc/travel_api.toml
+COPY ./api/etc/travel_api.toml /opt/apps/travel/etc/travel_api.toml
 
 RUN yum install -y nginx
 RUN yum install -y epel-release
