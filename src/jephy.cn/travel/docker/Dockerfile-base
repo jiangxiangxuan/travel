@@ -1,6 +1,10 @@
 #docker build -f Dockerfile-base -t jephy-base .
 FROM alpine:latest
 
+RUN apk update
+RUN apk upgrade
+RUN apk add --no-cache bash bash-doc bash-completion
+RUN rm -rf /var/cache/apk/*
 RUN apk add nginx
 RUN apk add supervisor
 RUN apk add nodejs
