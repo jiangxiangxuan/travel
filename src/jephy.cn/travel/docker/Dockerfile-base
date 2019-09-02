@@ -1,5 +1,5 @@
 #docker build -f Dockerfile-base -t jephy-base .
-FROM apline:latest
+FROM alpine:latest
 
 RUN apk add nginx
 RUN apk add supervisor
