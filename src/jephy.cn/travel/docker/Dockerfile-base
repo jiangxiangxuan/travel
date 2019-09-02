@@ -5,6 +5,8 @@ RUN apk add nginx
 RUN apk add supervisor
 RUN apk add nodejs
 RUN mkdir -p /run/nginx/
+RUN chown -R www:www /var/lib/nginx
+RUN adduser -D -g 'www' www
 RUN mkdir /etc/supervisor.d/
 
 CMD /usr/sbin/sshd -D
