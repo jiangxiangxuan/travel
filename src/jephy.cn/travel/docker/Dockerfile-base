@@ -1,4 +1,4 @@
-#docker build -f Dockerfile-base -t jephy-base
+#docker build -f Dockerfile-base -t jephy-base .
 
 FROM apline
 
