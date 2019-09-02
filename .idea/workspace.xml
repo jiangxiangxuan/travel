@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e803bafb-197e-497c-82d8-9d19011b55d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/jephy.cn/travel/docker/Dockerfile-base" beforeDir="false" afterPath="$PROJECT_DIR$/src/jephy.cn/travel/docker/Dockerfile-base" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jephy.cn/travel/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/jephy.cn/travel/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,20 +12,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jephy.cn/travel/docker/Dockerfile-base">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state>
+              <caret column="46" lean-forward="true" selection-start-column="36" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/jephy.cn/travel/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" selection-start-column="12" selection-end-column="18" />
+            <state relative-caret-position="540">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -130,8 +130,8 @@
         <option value="$PROJECT_DIR$/src/jephy.cn/travel/api/build.sh" />
         <option value="$PROJECT_DIR$/src/jephy.cn/travel/nginx/nginx.conf" />
         <option value="$PROJECT_DIR$/src/jephy.cn/travel/docker/start.sh" />
-        <option value="$PROJECT_DIR$/src/jephy.cn/travel/Dockerfile" />
         <option value="$PROJECT_DIR$/src/jephy.cn/travel/docker/Dockerfile-base" />
+        <option value="$PROJECT_DIR$/src/jephy.cn/travel/Dockerfile" />
       </list>
     </option>
   </component>
@@ -343,17 +343,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jephy.cn/travel/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/src/jephy.cn/travel/docker/Dockerfile-base">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="18" selection-start-column="12" selection-end-column="18" />
+          <caret column="46" lean-forward="true" selection-start-column="36" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jephy.cn/travel/docker/Dockerfile-base">
+    <entry file="file://$PROJECT_DIR$/src/jephy.cn/travel/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="540">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
