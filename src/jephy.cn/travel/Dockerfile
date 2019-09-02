@@ -1,3 +1,4 @@
+#docker build -f Dockerfile -t travel .
 FROM jephy-base
 #FROM centos:latest
 
