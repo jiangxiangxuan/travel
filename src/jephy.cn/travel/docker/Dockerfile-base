@@ -7,6 +7,6 @@ RUN apk add nodejs
 RUN adduser -D -g 'www' www
 RUN mkdir -p /run/nginx/
 RUN chown -R www:www /var/lib/nginx
-RUN mkdir /etc/supervisor.d/
+#RUN mkdir /etc/supervisor.d/
 
 CMD /usr/sbin/sshd -D
