@@ -21,7 +21,7 @@ alias GO=go
 export BUILD_RES=0
 echo "[BUILD_INFO] Start build with go insatll."
 if [ $# = 0 ] ; then
-    GO install ./$CMD_FOLDER/$PROJECT_NAME
+    CGO_ENABLED=0 GO install ./$CMD_FOLDER/$PROJECT_NAME
     BUILD_RES=$?
 
     if [[ $BUILD_RES = 0 ]]; then
@@ -32,7 +32,7 @@ fi
 
 for i in "$@" ;
 do
-    GO install ./$CMD_FOLDER/$i
+    CGO_ENABLED=0 GO install ./$CMD_FOLDER/$i
     BUILD_RES=$?
     if [[ $BUILD_RES != 0 ]]; then
         break
