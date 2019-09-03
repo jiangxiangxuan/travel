@@ -11,3 +11,4 @@ cp -rf /opt/apps/travel/etc/travel_api.toml /etc/travel_api.toml
 #service nginx restart
 /usr/sbin/nginx
 /usr/bin/supervisord -c /etc/supervisord.conf
+tail -f /etc/hosts
