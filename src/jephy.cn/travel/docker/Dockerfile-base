@@ -10,6 +10,7 @@ RUN /bin/bash
 RUN apk add nginx
 RUN apk add supervisor
 RUN apk add nodejs
+RUN apk add npm
 RUN apk add mysql
 RUN adduser -D -g 'www' www
 RUN mkdir -p /run/nginx/
