@@ -1,5 +1,5 @@
 #docker build -f Dockerfile -t travel .
-#docker run -d -it --rm=true travel
+#docker run -d -it --rm=true -p 88:80 travel
 FROM jephy-base
 #FROM centos:latest
 
