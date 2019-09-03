@@ -5,15 +5,18 @@ RUN apk update
 RUN apk upgrade
 RUN apk add --no-cache bash bash-doc bash-completion
 RUN rm -rf /var/cache/apk/*
+EVN MYSQL_ROOT_PASSWORD=root
 RUN /bin/bash
 RUN apk add nginx
 RUN apk add supervisor
 RUN apk add nodejs
+RUN apk add mysql
 RUN adduser -D -g 'www' www
 RUN mkdir -p /run/nginx/
 RUN mkdir -p /data/logs/nginx/
 RUN chown -R www:www /var/lib/nginx
 RUN chown -R www:www /data/logs/nginx/
 RUN mkdir /etc/supervisord.d/
+RUN mkdir /etc/supervisor.d
 
 CMD /usr/sbin/sshd -D
