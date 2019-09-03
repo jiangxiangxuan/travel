@@ -1,4 +1,5 @@
 #docker build -f Dockerfile -t travel .
+#docker run -it --rm=true travel
 FROM jephy-base
 #FROM centos:latest
 
@@ -23,4 +24,5 @@ COPY ./api/etc/travel_api.toml /opt/apps/travel/etc/travel_api.toml
 
 RUN cd /opt/apps/travel/web && npm install
 
-CMD ["sh", "/opt/apps/travel/docker/start.sh"]
+#CMD ["sh", "/opt/apps/travel/docker/start.sh"]
+ENTRYPOINT ["sh", "/opt/apps/travel/docker/start.sh"]
