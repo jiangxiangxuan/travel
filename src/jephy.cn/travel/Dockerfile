@@ -21,7 +21,6 @@ COPY ./api/etc/travel_api.toml /opt/apps/travel/etc/travel_api.toml
 #RUN yum install -y supervisor
 #RUN yum install -y nodejs
 
-RUN cd /opt/apps/travel/web
-RUN npm install
+RUN cd /opt/apps/travel/web && npm install
 
 CMD sh /opt/apps/travel/docker/start.sh
