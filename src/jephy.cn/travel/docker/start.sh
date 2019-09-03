@@ -3,6 +3,7 @@
 mkdir /data/logs -p
 mkdir /etc/supervisor.d -p
 
+rm -rf /etc/nginx/conf.d/*
 cp -rf /opt/apps/travel/nginx/travel_include.conf /etc/nginx/conf.d/travel_include.conf
 cp -rf /opt/apps/travel/nginx/nginx.conf /etc/nginx/nginx.conf
 cp -rf /opt/apps/travel/docker/supervisord/*  /etc/supervisor.d/
