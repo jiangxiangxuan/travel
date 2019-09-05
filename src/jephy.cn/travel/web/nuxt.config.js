@@ -12,8 +12,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     script: [
-      { src: '/static/data/initData.js' },
-      { src: '/static/layui/lay/dest/layui.all.js' }
+      // { innerHTML: require('./static/qrcode.min.js'), type: 'text/javascript', charset: 'utf-8', ssr: false}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -34,6 +33,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    // { src: '~/plugins/plugins', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -53,6 +53,7 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-    }
+    },
+    vendor: [ 'jr-qrcode'],
   }
 }
