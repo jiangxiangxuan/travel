@@ -11,6 +11,10 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
+    script: [
+      { src: '/static/data/initData.js' },
+      { src: '/static/layui/lay/dest/layui.all.js' }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
@@ -23,6 +27,8 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/css/app.css',
+    '@/static/layui/css/layui.css',
   ],
   /*
   ** Plugins to load before mounting the App

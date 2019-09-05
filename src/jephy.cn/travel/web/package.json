@@ -11,6 +11,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "config": "^3.2.2",
+    "fs": "0.0.1-security",
+    "jr-qrcode": "^1.1.4",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {},
