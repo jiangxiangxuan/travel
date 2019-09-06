@@ -1,4 +1,3 @@
-/*Copy于：http://www.atool.org/qrcode-scan.php*/
 _aa = {};
 _aa._ab = function(f, e) {
 	var d = qrcode.width;

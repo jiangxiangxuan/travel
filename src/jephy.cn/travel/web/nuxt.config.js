@@ -12,7 +12,10 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     script: [
-      // { innerHTML: require('./static/qrcode.min.js'), type: 'text/javascript', charset: 'utf-8', ssr: false}
+      { src: '/qrcode/qrcode.min.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
+      { src: '/qrcode/llqrcode.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
+      { src: '/qrcode/webqr.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
+      { src: '/qrcode/analyticCode.js', type: 'text/javascript', charset: 'utf-8', ssr: false}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -26,14 +29,11 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/css/app.css',
-    '@/static/layui/css/layui.css',
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    // { src: '~/plugins/plugins', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -53,7 +53,6 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-    },
-    vendor: [ 'jr-qrcode'],
+    }
   }
 }

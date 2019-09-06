@@ -1,41 +1,57 @@
 <template>
-  <div>
-    <img :src="qrcodeImg" />
+  <div class="container">
+    <Header/>
+    生成二维码：
+    <div id="qrcode"></div>
+    识别二维码：
+    <div>
+    <input type="text" id="decodecode" placeholder="点击右侧按钮进行识别">
+    <input type="file" id="decodefile" v-on:change="getUrl(this,'file-url')"/>
+    </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
-if (process.BROWSER_BUILD) {
-  require('jr-qrcode')
-}
-var jrQrcode = require('jr-qrcode');
+import Header from '~/components/Header.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
   name : 'test',
   data() {
       return {
-        qrcodeImg:'',
-            dataTxt:'test',
-            color:'',
-            bgcolor:'',
+        qrcode: {}
       }
-    },
-       components: {
-         jrQrcode,
-       },
+  },
+  components: {
+        Header,
+        Footer
+  },
+  watch:{
+
+  },
   mounted () {
-        var imgBase64 = jrQrcode.getQrBase64(this.dataTxt,{
-                padding		: 10,   //二维码四边空白，默认为10px
-                width		: 256,  //二维码图片宽度，默认为256px
-                height		: 256,  //二维码图片高度，默认为256px
-                correctLevel	: QRErrorCorrectLevel.H,    //二维码容错level，默认为高
-                background      : this.color||"#ffffff",    //二维码颜色
-                foreground      : this.bgcolor||"#1aa094"     //二维码背景颜色
-            });
-            this.qrcodeImg=imgBase64;
+        this.qrcode = new QRCode('qrcode', {
+              text: '永远相信美好的事情即将发生',
+              width: 200,
+              height: 200,
+              colorDark : '#000000',
+              colorLight : '#ffffff',
+              correctLevel : QRCode.CorrectLevel.H
+        });
+
+        this.qrcode.clear();
+        // this.qrcode.makeCode('new content');
   },
   methods: {
-
+    getUrl(e,param){
+    		analyticCode.getUrl(
+    			param,document.getElementById('decodefile'),
+    			function(imgMsg,url){
+    			document.getElementById('decodecode').value=imgMsg;
+    		}
+    		)
+    	}
   }
 }
 
