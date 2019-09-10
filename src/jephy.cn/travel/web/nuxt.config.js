@@ -29,11 +29,13 @@ export default {
   ** Global CSS
   */
   css: [
+    'element-ui/lib/theme-chalk/index.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    {src: '~/plugins/ElementUI', ssr: true }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -49,6 +51,8 @@ export default {
   ** Build configuration
   */
   build: {
+    // 防止element-ui被多次打包
+    vendor: ['element-ui'],
     /*
     ** You can extend webpack config here
     */
