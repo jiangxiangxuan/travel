@@ -1,31 +1,32 @@
 <template>
-  <div class="container">
-    <Header/>
-    生成二维码：
+    <div class="container">
+    <div>
+    生成二维码：<input type="text" placeholder="生成二维码字符串" v-model="codecontent"><button @click="genqrcode">生成</button>
+    </br>
     <div id="qrcode"></div>
+     </br>
+    </div>
+    <!--<div>
     识别二维码：
     <div>
     <input type="text" id="decodecode" placeholder="点击右侧按钮进行识别">
     <input type="file" id="decodefile" v-on:change="getUrl(this,'file-url')"/>
     </div>
-    <Footer/>
-  </div>
+    </div>-->
+    </div>
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
-import Footer from '~/components/Footer.vue'
-
 export default {
-  name : 'test',
+  name : 'qrcode',
   data() {
       return {
+        codecontent: '',
         qrcode: {}
       }
   },
   components: {
-        Header,
-        Footer
+
   },
   watch:{
 
@@ -51,7 +52,10 @@ export default {
     			document.getElementById('decodecode').value=imgMsg;
     		}
     		)
-    	}
+    },
+    genqrcode() {
+        this.qrcode.makeCode(this.codecontent);
+    }
   }
 }
 

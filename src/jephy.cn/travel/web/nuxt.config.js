@@ -18,7 +18,8 @@ export default {
       { src: '/qrcode/analyticCode.js', type: 'text/javascript', charset: 'utf-8', ssr: false}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: '/css/layout.css' }
     ]
   },
   /*
@@ -35,7 +36,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    {src: '~/plugins/ElementUI', ssr: true }
+    {src: '~/plugins/ElementUI', ssr: true },
+    {src: '~/plugins/JsonView', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -52,7 +54,7 @@ export default {
   */
   build: {
     // 防止element-ui被多次打包
-    vendor: ['element-ui'],
+    vendor: ['element-ui','vue-json-views'],
     /*
     ** You can extend webpack config here
     */

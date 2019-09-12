@@ -1,0 +1,19 @@
+.body .header {
+    width: 900px!important;
+    margin: 0 auto!important;
+}
+
+.body .container {
+    width: 900px!important;
+    margin: 0 auto!important;
+}
+
+.body .footer {
+    width: 900px!important;
+    margin: 0 auto!important;
+}
+
+#qrcode{
+    width: 200px;
+    height: 200px;
+}
