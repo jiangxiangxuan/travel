@@ -1,7 +1,10 @@
 <template>
     <div class="container">
        <input type="text" placeholder="json字符串" v-model="data">
-       <json-viewer :value="jsonData"></json-viewer>
+       <json-viewer :value="jsonData"
+       :copyable = "copyable"
+       boxed
+       ></json-viewer>
     </div>
 </template>
 
@@ -12,6 +15,7 @@
      data() {
             return {
                 data: '',
+                copyable:{copyText: '复制', copiedText: '复制'},
                 jsonData:{ }
             }
      },
