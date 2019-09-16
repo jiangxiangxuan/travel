@@ -5,6 +5,7 @@
     <el-menu :default-active="navselected" :active="navselected" class="el-menu-demo" mode="horizontal" @select="selectItems">
     <el-menu-item index="/tools/qrcode">二维码</el-menu-item>
     <el-menu-item index="/tools/json">json</el-menu-item>
+    <!--
     <el-menu-item index="3">客户管理</el-menu-item>
     <el-menu-item index="4">系统设置</el-menu-item>
     <el-menu-item index="5">活动发布</el-menu-item>
@@ -15,6 +16,7 @@
           <el-menu-item index="2-4-3">选项3</el-menu-item>
         </el-submenu>
       </el-submenu>
+      -->
     </el-menu>
     </el-col>
     </el-row>

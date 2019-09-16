@@ -1,10 +1,14 @@
 <template>
-    <div class="container">
-       <input type="text" placeholder="json字符串" v-model="data">
+    <div class="container json">
+        <div class="left">
+       <textarea type="text" placeholder="输入json字符串内容" v-model="data"/>
+       </div>
+        <div class="right">
        <json-viewer :value="jsonData"
        :copyable = "copyable"
        boxed
        ></json-viewer>
+       </div>
     </div>
 </template>
 

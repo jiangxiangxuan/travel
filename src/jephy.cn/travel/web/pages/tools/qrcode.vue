@@ -1,8 +1,12 @@
 <template>
-    <div class="container">
-    <div>
-    生成二维码：<input type="text" placeholder="生成二维码字符串" v-model="codecontent"><button @click="genqrcode">生成</button>
+    <div class="container qrcode">
+    <div class="left">
+    <textarea type="text" placeholder="输入二维码内容" v-model="codecontent"/>
     </br>
+    <button @click="genqrcode">生成</button>
+    </div>
+    <div class="right">
+    生成结果:</br>
     <div id="qrcode"></div>
      </br>
     </div>
@@ -33,7 +37,7 @@ export default {
   },
   mounted () {
         this.qrcode = new QRCode('qrcode', {
-              text: '永远相信美好的事情即将发生',
+              text: '二维码',
               width: 200,
               height: 200,
               colorDark : '#000000',
@@ -41,7 +45,7 @@ export default {
               correctLevel : QRCode.CorrectLevel.H
         });
 
-        this.qrcode.clear();
+        // this.qrcode.clear();
         // this.qrcode.makeCode('new content');
   },
   methods: {
@@ -54,6 +58,7 @@ export default {
     		)
     },
     genqrcode() {
+        this.qrcode.clear();
         this.qrcode.makeCode(this.codecontent);
     }
   }
