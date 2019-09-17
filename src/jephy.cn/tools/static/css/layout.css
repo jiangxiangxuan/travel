@@ -1,0 +1,65 @@
+.body .header {
+    width: 900px!important;
+    margin: 0 auto!important;
+}
+
+.body .container {
+    width: 900px!important;
+    margin: 10px auto!important;
+}
+
+.body .footer {
+    width: 580px!important;
+    margin: 10px auto!important;
+}
+
+#qrcode{
+    width: 200px;
+    height: 200px;
+}
+
+.qrcode {
+    height: 600px;
+}
+
+.qrcode .left {
+    width: 450px;
+    height: 600px;
+    float: left;
+}
+
+.qrcode .left textarea {
+    width: 400px;
+    height: 60px;
+}
+
+.qrcode .right {
+    width: 450px;
+    height: 600px;
+    float: left;
+}
+
+.json {
+    height: 600px;
+}
+
+.json .left {
+    width: 450px;
+    height: 600px;
+    float: left;
+}
+
+.json .left textarea {
+    width: 430px;
+    height: 600px;
+}
+
+.json .right {
+    width: 450px;
+    height: 600px;
+    float: left;
+}
+
+.jv-container{
+    min-height: 600px;
+}
