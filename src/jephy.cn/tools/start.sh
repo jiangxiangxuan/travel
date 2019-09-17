@@ -4,4 +4,4 @@
 
 npm install
 
-npm run dev
+setsid npm run dev &
