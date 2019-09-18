@@ -20,6 +20,7 @@
         }
      },
      components: {
+
      },
      data() {
             return {
