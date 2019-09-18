@@ -937,9 +937,9 @@ function _db(_fa) {
 		var _fq = false;
 		var noError = true;
 		for (var i = 0; i < _fv; i++) {
-			var eval = poly.evaluateAt(this._fa.exp(_fq ? i + 1 : i));
-			_dh[_dh.length - 1 - i] = eval;
-			if (eval != 0) {
+			var val = poly.evaluateAt(this._fa.exp(_fq ? i + 1 : i));
+			_dh[_dh.length - 1 - i] = val;
+			if (val != 0) {
 				noError = false
 			}
 		}

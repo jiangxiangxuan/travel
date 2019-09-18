@@ -13,11 +13,12 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     script: [
-      // { src: '/plugins/jquery-1.11.1/jquery.min.js', charset: 'utf-8', ssr: false },
+      { src: '/plugins/jquery-1.11.1/jquery.min.js', charset: 'utf-8', ssr: false },
       { src: '/qrcode/qrcode.min.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
-      { src: '/qrcode/llqrcode.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
-      { src: '/qrcode/webqr.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
-      { src: '/qrcode/analyticCode.js', type: 'text/javascript', charset: 'utf-8', ssr: false}
+      // { src: '/qrcode/llqrcode.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
+      // { src: '/qrcode/webqr.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
+      // { src: '/qrcode/analyticCode.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
+      { src: '/plugins/json-viewer/jquery.json-viewer.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -41,7 +42,7 @@ export default {
   plugins: [
     {src: '~/plugins/ElementUI', ssr: true },
     {src: '~/plugins/JsonView', ssr: false },
-    {src: '~/plugins/jquery.JsonView', ssr: false }
+    // {src: '~/plugins/jquery.JsonView', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -58,7 +59,7 @@ export default {
   */
   build: {
     // 防止element-ui被多次打包
-    vendor: ['element-ui','vue-json-views', 'jquery.json-viewer'],
+    vendor: ['element-ui','vue-json-views'],
     /*
     ** You can extend webpack config here
     */

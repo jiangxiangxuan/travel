@@ -21,6 +21,8 @@
 </template>
 
 <script>
+// import '../static/qrcode/qrcode.min.js'
+
 export default {
   name : 'qrcode',
   head () {
