@@ -10,7 +10,7 @@
         return {
             title: '在线开发工具',
             meta: [
-                  { 'http-equiv': 'refresh', content: '0;url=/json' }
+                  { 'http-equiv': 'refresh', content: '0;url=/qrcode' }
                 ]
         }
      },

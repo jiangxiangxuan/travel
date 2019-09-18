@@ -1,2 +1,0 @@
-exports.ids=[1],exports.modules={25:function(t,e,n){"use strict";n.r(e);var r={head:()=>({title:"在线开发工具",meta:[{"http-equiv":"refresh",content:"0;url=/json"}]}),components:{}},c=n(1),component=Object(c.a)(r,function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"container"},[])},[],!1,null,null,"3c1ed884");e.default=component.exports}};
-//# sourceMappingURL=78519f97e42639643ff9.js.map
