@@ -2,6 +2,9 @@ export default{
   getUrlParams: function (name) {
     return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.href) || [''])[1].replace(/\+/g, '%20')) || null
   },
+  getdomain: function() {
+    return document.domain;
+  },
   getUrlParam: function (key) {
     var name, value
     var str = location.href
