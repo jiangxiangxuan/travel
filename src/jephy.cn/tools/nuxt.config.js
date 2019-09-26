@@ -18,7 +18,8 @@ export default {
       // { src: '/qrcode/llqrcode.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
       // { src: '/qrcode/webqr.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
       // { src: '/qrcode/analyticCode.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
-      { src: '/plugins/json-viewer/jquery.json-viewer.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
+      // { src: '/plugins/json-viewer/jquery.json-viewer.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
+      { src: '/plugins/jsonview/jquery.jsonview.js', type: 'text/javascript', charset: 'utf-8', ssr: false},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

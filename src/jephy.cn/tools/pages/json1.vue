@@ -4,18 +4,18 @@
        <textarea type="text" placeholder="输入json字符串内容" v-model="data"/>
        </div>
         <div class="right">
-         <button id="collapse-btn">Collapse</button>
-         <button id="expand-btn">Expand</button>
-         <button id="toggle-btn">Toggle</button>
-         <button id="toggle-level1-btn">Toggle level1</button>
-         <button id="toggle-level2-btn">Toggle level2</button>
-         <div id="json-collapsed"></div>
+       <json-viewer :value="jsonData"
+       :copyable = "copyable"
+       boxed
+       ></json-viewer>
        </div>
     </div>
 </template>
 
 <script>
-    // import '../node_modules/jquery.json-viewer/json-viewer/jquery.json-viewer.js'
+    import '../node_modules/vue-json-viewer/style.css'
+    // import JsonViewer from 'vue-json-viewer'
+
     export default {
      head () {
         return {
@@ -23,10 +23,12 @@
         }
      },
      components: {
+
      },
      data() {
             return {
                 data: '',
+                copyable:{copyText: '复制', copiedText: '复制'},
                 jsonData:{ }
             }
      },
@@ -34,9 +36,8 @@
         data (val) {
             try {
                 this.jsonData = JSON.parse(val)
-                $("#json-collapsed").jsonViewer(this.jsonData, {collapsed: true, nl2br: true});
             }catch(err){
-                console.log(err)
+
             }
         }
      },

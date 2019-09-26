@@ -8,7 +8,7 @@ import _6f6c098b from '..\\layouts\\default.vue'
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"title":"tools","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"My posh Nuxt.js project"}],"script":[{"src":"\u002Fplugins\u002Fjquery-1.11.1\u002Fjquery.min.js","charset":"utf-8","ssr":false},{"src":"\u002Fqrcode\u002Fqrcode.min.js","type":"text\u002Fjavascript","charset":"utf-8","ssr":false},{"src":"\u002Fplugins\u002Fjson-viewer\u002Fjquery.json-viewer.js","type":"text\u002Fjavascript","charset":"utf-8","ssr":false}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"\u002Fcss\u002Flayout.css"}],"style":[]},
+  head: {"title":"tools","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"My posh Nuxt.js project"}],"script":[{"src":"\u002Fplugins\u002Fjquery-1.11.1\u002Fjquery.min.js","charset":"utf-8","ssr":false},{"src":"\u002Fqrcode\u002Fqrcode.min.js","type":"text\u002Fjavascript","charset":"utf-8","ssr":false},{"src":"\u002Fplugins\u002Fjsonview\u002Fjquery.jsonview.js","type":"text\u002Fjavascript","charset":"utf-8","ssr":false}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"\u002Fcss\u002Flayout.css"}],"style":[]},
 
   render(h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })
