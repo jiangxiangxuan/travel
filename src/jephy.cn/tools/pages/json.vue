@@ -4,7 +4,9 @@
        <textarea type="text" placeholder="输入json字符串内容" v-model="data"/>
        </div>
         <div class="right">
-         <div id="json-view"></div>
+            <input type="button" @click="copy" value="点此复制">
+            <textarea type="text" v-model="jsonData" id="json-view"></textarea>
+            <!--<div id="json-view"></div>-->
        </div>
     </div>
 </template>
@@ -29,7 +31,7 @@
             try {
                 var json = JSON.parse(val)
                 this.jsonData = JSON.stringify(json, undefined, 4)
-                $('#json-view').html(this.highLight(this.jsonData))
+                $('#json-view').val(this.highLight(this.jsonData))
             }catch(err){
                 console.log(err)
             }
@@ -59,6 +61,11 @@
         formatJson (jsonStr) {
             var str = JSON.stringify(jsonStr, undefined, 4);
             return this.highLight(str)
+        },
+        copy () {
+            var obj=document.getElementById("json-view")
+            obj.select();
+            document.execCommand("copy");
         }
      }
     }
@@ -70,6 +77,8 @@
     font-family: monospace;
     white-space: pre;
     margin: 1em 0px;
+    width: 430px;
+    height: 565px;
 }
 .key{
     color: red;

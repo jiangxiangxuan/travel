@@ -60,6 +60,11 @@
     float: left;
 }
 
+.json .right textarea {
+    width: 430px;
+    height: 600px;
+}
+
 .jv-container{
     min-height: 600px;
 }
