@@ -2,10 +2,13 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _b9f3b04a = () => interopDefault(import('..\\pages\\json.vue' /* webpackChunkName: "pages_json" */))
-const _846f3534 = () => interopDefault(import('..\\pages\\json1.vue' /* webpackChunkName: "pages_json1" */))
-const _7570de7e = () => interopDefault(import('..\\pages\\qrcode.vue' /* webpackChunkName: "pages_qrcode" */))
-const _5e731d22 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
+const _0d434994 = () => interopDefault(import('..\\pages\\html2markdown.vue' /* webpackChunkName: "pages_html2markdown" */))
+const _6560ea9a = () => interopDefault(import('..\\pages\\json.vue' /* webpackChunkName: "pages_json" */))
+const _46c5fa87 = () => interopDefault(import('..\\pages\\json1.vue' /* webpackChunkName: "pages_json1" */))
+const _1579cde8 = () => interopDefault(import('..\\pages\\markdown2html.vue' /* webpackChunkName: "pages_markdown2html" */))
+const _133bd327 = () => interopDefault(import('..\\pages\\mdconvert1.vue' /* webpackChunkName: "pages_mdconvert1" */))
+const _5bfc9fc0 = () => interopDefault(import('..\\pages\\qrcode.vue' /* webpackChunkName: "pages_qrcode" */))
+const _59c40690 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 Vue.use(Router)
 
@@ -82,20 +85,32 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
+      path: "/html2markdown",
+      component: _0d434994,
+      name: "html2markdown"
+    }, {
       path: "/json",
-      component: _b9f3b04a,
+      component: _6560ea9a,
       name: "json"
     }, {
       path: "/json1",
-      component: _846f3534,
+      component: _46c5fa87,
       name: "json1"
     }, {
+      path: "/markdown2html",
+      component: _1579cde8,
+      name: "markdown2html"
+    }, {
+      path: "/mdconvert1",
+      component: _133bd327,
+      name: "mdconvert1"
+    }, {
       path: "/qrcode",
-      component: _7570de7e,
+      component: _5bfc9fc0,
       name: "qrcode"
     }, {
       path: "/",
-      component: _5e731d22,
+      component: _59c40690,
       name: "index"
     }],
 
