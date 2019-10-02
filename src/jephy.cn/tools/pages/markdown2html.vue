@@ -1,5 +1,5 @@
 <template>
-        <div class="container">
+        <div class="container markdown">
             <textarea v-model="mdText2" style="width:100%; height:250px;"></textarea>
             <button @click="toHtml">转为Html</button>
             <textarea v-model="htmlText2" style="width:100%; height:250px;"></textarea>
@@ -46,3 +46,9 @@
         }
     }
 </script>
+
+<style scoped>
+.markdown {
+    height:600px;
+}
+</style>

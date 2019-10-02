@@ -133,6 +133,9 @@
 </script>
 
 <style scoped>
+.encrypt {
+    height:600px;
+}
 .encrypt ul {
     margin: 0;
 }

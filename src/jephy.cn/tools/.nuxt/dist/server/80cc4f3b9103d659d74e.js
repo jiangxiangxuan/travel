@@ -1,0 +1,2 @@
+exports.ids=[4],exports.modules={49:function(t,e,r){"use strict";r.r(e);var n={head:()=>({title:"在线开发工具",meta:[{"http-equiv":"refresh",content:"0;url=/qrcode"}]}),components:{}},c=r(1),component=Object(c.a)(n,function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"container"},[])},[],!1,null,null,"380ba0b2");e.default=component.exports}};
+//# sourceMappingURL=80cc4f3b9103d659d74e.js.map
