@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
+const _0682c5ba = () => interopDefault(import('..\\pages\\encrypt.vue' /* webpackChunkName: "pages_encrypt" */))
+const _38258880 = () => interopDefault(import('..\\pages\\hash.vue' /* webpackChunkName: "pages_hash" */))
 const _0d434994 = () => interopDefault(import('..\\pages\\html2markdown.vue' /* webpackChunkName: "pages_html2markdown" */))
 const _6560ea9a = () => interopDefault(import('..\\pages\\json.vue' /* webpackChunkName: "pages_json" */))
 const _46c5fa87 = () => interopDefault(import('..\\pages\\json1.vue' /* webpackChunkName: "pages_json1" */))
@@ -85,6 +87,14 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
+      path: "/encrypt",
+      component: _0682c5ba,
+      name: "encrypt"
+    }, {
+      path: "/hash",
+      component: _38258880,
+      name: "hash"
+    }, {
       path: "/html2markdown",
       component: _0d434994,
       name: "html2markdown"
