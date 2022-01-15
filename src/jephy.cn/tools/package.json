@@ -18,7 +18,7 @@
     "jquery": "^3.4.1",
     "jquery.json-viewer": "^1.4.0",
     "jr-qrcode": "^1.1.4",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "nuxt": "^2.0.0",
     "qrcodejs2": "^0.0.2",
     "vue-json-viewer": "^2.2.4",
