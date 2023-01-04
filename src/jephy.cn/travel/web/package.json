@@ -16,7 +16,7 @@
     "fs": "0.0.1-security",
     "jquery.json-viewer": "^1.4.0",
     "jr-qrcode": "^1.1.4",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "qrcodejs2": "^0.0.2",
     "vue-json-viewer": "^2.2.4",
     "vue-json-views": "^0.3.0",
